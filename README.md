@@ -6,6 +6,23 @@ This depo describes the steps to download RASP [[1]](#1), from the website: http
 
 It builds a Dockerfile over the code to be run easily. 
 
+## Running command
+
+To run the RASP algorithm using docker, you can use : 
+```
+make docker_start
+```
+that build and run the container. 
+
+You can also build it by hand: 
+```
+docker build -t rasp .
+```
+And then run it: 
+```
+docker run -it rasp <ARGS>
+```
+and then replace the `<ARGS>` by the arguments needed. 
 
 
 
