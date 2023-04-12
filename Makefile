@@ -1,3 +1,5 @@
+export RASP=/src/lib/rasp/
+
 all:  rna
 
 pdb:
@@ -14,6 +16,6 @@ docker_start:
 	docker build -t rasp .
 	docker run -it rasp
 
-run:
+run: rna
 	./bin/rasp_fd -e all -p example/1Z43.pdb
 
