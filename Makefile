@@ -1,4 +1,4 @@
-export RASP=/src/lib/rasp/
+export RASP=/src/lib/rasp
 
 all:  rna
 
